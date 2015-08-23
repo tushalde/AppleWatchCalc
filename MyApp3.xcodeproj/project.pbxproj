@@ -20,6 +20,7 @@
 		9E7BA8051B8A4D80008338BF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7BA8031B8A4D80008338BF /* Interface.storyboard */; };
 		9E7BA8071B8A4D80008338BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7BA8061B8A4D80008338BF /* Images.xcassets */; };
 		9E7BA80A1B8A4D80008338BF /* MyApp3 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E7BA7EF1B8A4D80008338BF /* MyApp3 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9E7BA8151B8A6078008338BF /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BA8141B8A6078008338BF /* CalculatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		9E7BA8021B8A4D80008338BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E7BA8041B8A4D80008338BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9E7BA8061B8A4D80008338BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E7BA8141B8A6078008338BF /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				9E7BA7F61B8A4D80008338BF /* NotificationController.swift */,
 				9E7BA7F81B8A4D80008338BF /* Images.xcassets */,
 				9E7BA7F11B8A4D80008338BF /* Supporting Files */,
+				9E7BA8141B8A6078008338BF /* CalculatorController.swift */,
 			);
 			path = "MyApp3 WatchKit Extension";
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7BA7F71B8A4D80008338BF /* NotificationController.swift in Sources */,
+				9E7BA8151B8A6078008338BF /* CalculatorController.swift in Sources */,
 				9E7BA7F51B8A4D80008338BF /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

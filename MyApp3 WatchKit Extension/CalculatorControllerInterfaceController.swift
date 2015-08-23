@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  MyApp3 WatchKit Extension
+//  CalculatorControllerInterfaceController.swift
+//  MyApp3
 //
 //  Created by Tushal Desai on 8/23/15.
 //  Copyright (c) 2015 Tushal Desai. All rights reserved.
@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {    
-    
+class CalculatorControllerInterfaceController: WKInterfaceController {
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
