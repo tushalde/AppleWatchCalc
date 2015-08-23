@@ -12,11 +12,106 @@
                     <items>
                         <label width="1" alignment="left" text="My Watch App" id="Byg-1f-gQg"/>
                         <separator alignment="left" id="0jo-uk-def"/>
-                        <button width="1" alignment="left" title="Calculator" id="weL-KJ-Jvy"/>
+                        <button width="1" alignment="left" title="Calculator" id="weL-KJ-Jvy">
+                            <connections>
+                                <segue destination="Kxi-Yq-XHN" kind="push" id="TIo-LE-Ixr"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Xgs-lO-shr">
+            <objects>
+                <controller id="Kxi-Yq-XHN">
+                    <items>
+                        <label width="1" height="0.12" alignment="left" text="0.0" textAlignment="right" id="7sU-gs-ucx"/>
+                        <group width="1" height="0.22" alignment="left" id="jJ4-QL-Lgm">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="7" id="JlD-hA-4sk">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="8" id="f1c-Ri-YvI">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="9" id="hn9-jF-1wY">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="+" id="auA-w1-oJz">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="nOQ-2h-vVV">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="4" id="Vol-Mm-ryz">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="5" id="3a1-Yx-Bqk">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="6" id="P8B-5y-43M">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="-" id="vKy-js-Rhf">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="D7U-9c-WXD">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="1" id="3D2-9R-Bk1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="2" id="tZp-Kl-OzB">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="3" id="HJK-h9-VuT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="*" id="gev-ow-6Xi">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="jij-bL-LBn">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="0" id="cKc-9F-XEW">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="." id="N3F-Ya-foW">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="C =" id="Rsa-dB-fBu">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="/" id="ff7-GH-iUd">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="425" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
