@@ -17,8 +17,10 @@ class CalculatorController: WKInterfaceController {
     var operation = 0
     var result = ""
     var enteringSecondNumber = false
+    var btnEqualsPressedOnce = false
     
     @IBOutlet weak var lbResult: WKInterfaceLabel!
+    @IBOutlet weak var lbSign: WKInterfaceLabel!
     @IBAction func btn0() {
         updateResultLabel("0")
     }
@@ -55,18 +57,22 @@ class CalculatorController: WKInterfaceController {
     @IBAction func btnAdd() {
         operation = 1
         prepareForSecondNumber()
+        lbSign.setText("+")
     }
     @IBAction func btnSubtract() {
         operation = 2
         prepareForSecondNumber()
+        lbSign.setText("-")
     }
     @IBAction func btnMultiply() {
         operation = 3
         prepareForSecondNumber()
+        lbSign.setText("*")
     }
     @IBAction func btnDivide() {
         operation = 4
         prepareForSecondNumber()
+        lbSign.setText("/")
     }
     @IBAction func btnClear() {
         result = ""
@@ -75,8 +81,11 @@ class CalculatorController: WKInterfaceController {
         operation = 0
         lbResult.setText("0")
         enteringSecondNumber = false
+        lbSign.setText("")
     }
     @IBAction func btnEquals() {
+        
+        
         operand2 = (result as NSString).doubleValue
         var answer:Double = 0.0
         switch operation {
@@ -100,12 +109,14 @@ class CalculatorController: WKInterfaceController {
         operand1 = nil
         operation = 0
         enteringSecondNumber = false
+        lbSign.setText("")
     }
     
     func updateResultLabel(EnteredNumber: String) {
         if enteringSecondNumber {
             result = EnteredNumber
             enteringSecondNumber = false
+            lbSign.setText("")
         }
         else {
             if EnteredNumber == "." {

@@ -34,7 +34,8 @@
                     <items>
                         <group width="1" height="0.20000000000000001" alignment="left" id="11Y-II-aBf">
                             <items>
-                                <label width="0.75" alignment="left" verticalAlignment="center" text="0" textAlignment="right" id="P4N-gm-kSL"/>
+                                <label width="0.68000000000000005" alignment="left" verticalAlignment="center" text="0" textAlignment="right" id="P4N-gm-kSL"/>
+                                <label width="0.070000000000000007" height="1" alignment="left" verticalAlignment="center" text=" " id="KHH-9q-5sN"/>
                                 <button width="0.25" height="1" alignment="left" title="C" id="Vd2-tY-uCN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,6 +176,7 @@
                     </items>
                     <connections>
                         <outlet property="lbResult" destination="P4N-gm-kSL" id="JYo-qI-7Bv"/>
+                        <outlet property="lbSign" destination="KHH-9q-5sN" id="akE-Qq-jdr"/>
                     </connections>
                 </controller>
             </objects>
