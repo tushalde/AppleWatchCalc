@@ -82,34 +82,45 @@ class CalculatorController: WKInterfaceController {
         lbResult.setText("0")
         enteringSecondNumber = false
         lbSign.setText("")
+        btnEqualsPressedOnce = false
     }
     @IBAction func btnEquals() {
-        
-        
-        operand2 = (result as NSString).doubleValue
-        var answer:Double = 0.0
-        switch operation {
-        case 1:
-            answer = operand1 + operand2
-            break
-        case 2:
-            answer = operand1 - operand2
-            break
-        case 3:
-            answer = operand1 * operand2
-            break
-        case 4:
-            answer = operand1 / operand2
-            break
-        default:
-            println("Error")
+        if btnEqualsPressedOnce {
+            return
         }
-        result = "\(answer)"
-        lbResult.setText(result)
-        operand1 = nil
-        operation = 0
-        enteringSecondNumber = false
-        lbSign.setText("")
+        else {
+            operand2 = (result as NSString).doubleValue
+            if operation == 0 {
+                return
+            }
+            else {
+                var answer:Double = 0.0
+                switch operation {
+                case 1:
+                    answer = operand1 + operand2
+                    break
+                case 2:
+                    answer = operand1 - operand2
+                    break
+                case 3:
+                    answer = operand1 * operand2
+                    break
+                case 4:
+                    answer = operand1 / operand2
+                    break
+                default:
+                    println("Error")
+                }
+                result = "\(answer)"
+                lbResult.setText(result)
+                operand1 = nil
+                operation = 0
+                enteringSecondNumber = false
+                lbSign.setText("")
+                btnEqualsPressedOnce = true
+            }
+            
+        }
     }
     
     func updateResultLabel(EnteredNumber: String) {
@@ -132,6 +143,7 @@ class CalculatorController: WKInterfaceController {
     func prepareForSecondNumber() {
         operand1 = (result as NSString).doubleValue
         enteringSecondNumber = true
+        btnEqualsPressedOnce = false
     }
 
     override func awakeWithContext(context: AnyObject?) {
