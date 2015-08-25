@@ -21,6 +21,7 @@
 		9E7BA8071B8A4D80008338BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7BA8061B8A4D80008338BF /* Images.xcassets */; };
 		9E7BA80A1B8A4D80008338BF /* MyApp3 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E7BA7EF1B8A4D80008338BF /* MyApp3 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9E7BA8151B8A6078008338BF /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BA8141B8A6078008338BF /* CalculatorController.swift */; };
+		9EF1FC471B8C02DC000FF8CE /* HoroscopeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1FC461B8C02DC000FF8CE /* HoroscopeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		9E7BA8041B8A4D80008338BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9E7BA8061B8A4D80008338BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9E7BA8141B8A6078008338BF /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		9EF1FC461B8C02DC000FF8CE /* HoroscopeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				9E7BA7F81B8A4D80008338BF /* Images.xcassets */,
 				9E7BA7F11B8A4D80008338BF /* Supporting Files */,
 				9E7BA8141B8A6078008338BF /* CalculatorController.swift */,
+				9EF1FC461B8C02DC000FF8CE /* HoroscopeController.swift */,
 			);
 			path = "MyApp3 WatchKit Extension";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			files = (
 				9E7BA7F71B8A4D80008338BF /* NotificationController.swift in Sources */,
 				9E7BA8151B8A6078008338BF /* CalculatorController.swift in Sources */,
+				9EF1FC471B8C02DC000FF8CE /* HoroscopeController.swift in Sources */,
 				9E7BA7F51B8A4D80008338BF /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +655,7 @@
 				9E7BA7E71B8A4D31008338BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E7BA7E81B8A4D31008338BF /* Build configuration list for PBXNativeTarget "MyApp3Tests" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +664,7 @@
 				9E7BA7EA1B8A4D31008338BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E7BA80B1B8A4D80008338BF /* Build configuration list for PBXNativeTarget "MyApp3 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +673,7 @@
 				9E7BA80D1B8A4D80008338BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E7BA80E1B8A4D80008338BF /* Build configuration list for PBXNativeTarget "MyApp3 WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +682,7 @@
 				9E7BA8101B8A4D80008338BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

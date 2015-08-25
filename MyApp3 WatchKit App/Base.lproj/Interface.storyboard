@@ -22,15 +22,27 @@
                                 <segue destination="Kxi-Yq-XHN" kind="push" id="TIo-LE-Ixr"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Get Fortune" id="tgo-AU-B6o">
+                            <color key="backgroundColor" red="0.90196084980000002" green="0.67450982329999998" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="TmT-yf-j5z" kind="push" id="BGw-5X-GZa"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Temp Converter" id="4Oe-Ai-FsZ">
+                            <color key="backgroundColor" red="0.90196084980000002" green="0.67450982329999998" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="zKh-9d-uke" kind="push" id="UtG-cZ-jWw"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="186"/>
         </scene>
-        <!--Calculator Controller-->
+        <!--Calculator-->
         <scene sceneID="Xgs-lO-shr">
             <objects>
-                <controller id="Kxi-Yq-XHN" customClass="CalculatorController" customModule="MyApp3_WatchKit_Extension">
+                <controller title="Calculator" id="Kxi-Yq-XHN" customClass="CalculatorController" customModule="MyApp3_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.20000000000000001" alignment="left" id="11Y-II-aBf">
                             <items>
@@ -180,7 +192,54 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="425" y="345"/>
+            <point key="canvasLocation" x="475" y="-46"/>
+        </scene>
+        <!--Fortune-->
+        <scene sceneID="uVY-b2-HSB">
+            <objects>
+                <controller title="Fortune" id="TmT-yf-j5z" customClass="HoroscopeController" customModule="MyApp3_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text=" " numberOfLines="6" id="I8u-44-9xw"/>
+                        <button width="1" alignment="left" title="Press me!" id="PFE-Wr-clu">
+                            <color key="backgroundColor" red="0.90196084980000002" green="0.67450982329999998" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="btnHoroscope" destination="TmT-yf-j5z" id="LPo-9g-eRr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lbHoroscope" destination="I8u-44-9xw" id="WfA-dl-ua2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="475" y="186"/>
+        </scene>
+        <!--Temp Conv-->
+        <scene sceneID="CC3-qv-llM">
+            <objects>
+                <controller title="Temp Conv" id="zKh-9d-uke">
+                    <items>
+                        <label width="1" alignment="left" text="Temperature Converter" textAlignment="center" numberOfLines="3" id="fnd-z5-Poa">
+                            <color key="textColor" red="0.99607849120000003" green="0.89411771299999998" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                        <separator alignment="left" id="1X0-yH-IPY"/>
+                        <slider width="1" alignment="left" maximum="120" steps="60" id="C1F-Rv-iMO"/>
+                        <group width="1" alignment="left" id="yuF-BC-qHz">
+                            <items>
+                                <label width="0.5" alignment="left" text="Fahrenheit" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="Utc-RG-T3s"/>
+                                <label width="0.5" alignment="left" text="F°" textAlignment="center" id="E0O-Ib-BuC"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="H4a-ff-eJW">
+                            <items>
+                                <label width="0.5" alignment="left" text="Celsius" textAlignment="center" id="eaT-PZ-Hlv"/>
+                                <label width="0.5" alignment="left" text="C°" textAlignment="center" id="6O0-p7-iXN"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="475"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -196,14 +255,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="736"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="MyApp3_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="468" y="736"/>
         </scene>
     </scenes>
 </document>
