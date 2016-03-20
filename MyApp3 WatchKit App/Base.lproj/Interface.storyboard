@@ -206,8 +206,15 @@
                                 <action selector="btnHoroscope" destination="TmT-yf-j5z" id="LPo-9g-eRr"/>
                             </connections>
                         </button>
+                        <switch width="1" alignment="left" title="USC theme" id="sIO-s1-5Mt">
+                            <connections>
+                                <action selector="USCThemeSwitch:" destination="TmT-yf-j5z" id="mKL-AG-E13"/>
+                            </connections>
+                        </switch>
                     </items>
                     <connections>
+                        <outlet property="USCThemeSwitchHandle" destination="sIO-s1-5Mt" id="v1h-ne-JLe"/>
+                        <outlet property="btnHoroscopeHandle" destination="PFE-Wr-clu" id="a7v-ES-AKb"/>
                         <outlet property="lbHoroscope" destination="I8u-44-9xw" id="WfA-dl-ua2"/>
                     </connections>
                 </controller>
@@ -217,26 +224,38 @@
         <!--Temp Conv-->
         <scene sceneID="CC3-qv-llM">
             <objects>
-                <controller title="Temp Conv" id="zKh-9d-uke">
+                <controller title="Temp Conv" id="zKh-9d-uke" customClass="TempConverterController" customModule="MyApp3_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Temperature Converter" textAlignment="center" numberOfLines="3" id="fnd-z5-Poa">
                             <color key="textColor" red="0.99607849120000003" green="0.89411771299999998" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                         </label>
                         <separator alignment="left" id="1X0-yH-IPY"/>
-                        <slider width="1" alignment="left" maximum="120" steps="60" id="C1F-Rv-iMO"/>
+                        <slider width="1" alignment="left" maximum="120" steps="60" id="C1F-Rv-iMO">
+                            <connections>
+                                <action selector="tempConvSlider:" destination="zKh-9d-uke" id="B7K-fa-NcZ"/>
+                            </connections>
+                        </slider>
                         <group width="1" alignment="left" id="yuF-BC-qHz">
                             <items>
                                 <label width="0.5" alignment="left" text="Fahrenheit" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="Utc-RG-T3s"/>
-                                <label width="0.5" alignment="left" text="F°" textAlignment="center" id="E0O-Ib-BuC"/>
+                                <label width="0.5" alignment="left" text="F°" textAlignment="center" id="E0O-Ib-BuC">
+                                    <color key="textColor" red="0.90196084980000002" green="0.67450982329999998" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                                </label>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="H4a-ff-eJW">
                             <items>
                                 <label width="0.5" alignment="left" text="Celsius" textAlignment="center" id="eaT-PZ-Hlv"/>
-                                <label width="0.5" alignment="left" text="C°" textAlignment="center" id="6O0-p7-iXN"/>
+                                <label width="0.5" alignment="left" text="C°" textAlignment="center" id="6O0-p7-iXN">
+                                    <color key="textColor" red="0.90196084980000002" green="0.67450982329999998" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                                </label>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="lbCelsius" destination="6O0-p7-iXN" id="Fgh-Ew-YWM"/>
+                        <outlet property="lbFahrenheit" destination="E0O-Ib-BuC" id="INM-Rm-7qW"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="475"/>
